@@ -149,24 +149,13 @@ button {
     padding: 1rem 1rem 1rem 1rem;
 }
 
-.custom-list  {
-    align-items: start;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    font-size: 1.3rem;
-    justify-content: start;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-}
-
 .custom-list::before {
     content: "";
 }
 
 .item-text  {
     font-size: 1.3rem;
+    padding: 1.2rem 0.5rem 0 0.5rem;
 }
 
 .qr-title    {
