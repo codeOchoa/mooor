@@ -108,7 +108,7 @@ button {
     border: 1px solid var(--bgBlack-color);
     border-radius: 10px;
     font-size: 1.3rem;
-    width: 225px;
+    width: 180px;
 }
 
 .itemInput-button   {
@@ -148,6 +148,10 @@ button {
     max-width: 500px;
     min-width: 300px;
     padding: 1rem 1rem 1rem 1rem;
+}
+
+.custom-list    {
+    max-width: 350px;
 }
 
 .custom-list::before {
