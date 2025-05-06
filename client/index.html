@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organizacion del viaje">
+    <meta name="keywords" content="travel, guide, friends, mockup">
+    <meta name="author" content="codeOchoa">
+    <title>Moor</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%3E%3Cpath%20d%3D'M12%200C5.372%200%200%205.372%200%2012s5.372%2012%2012%2012%2012-5.372%2012-12S18.628%200%2012%200zm0%201.334c.824%200%201.636.191%202.373.56a.53.53%200%200%201%20.294.474v1.519a15.985%2015.985%200%200%200-5.334%200V2.368c0-.2.114-.384.294-.474A5.304%205.304%200%200%201%2012%201.334zm5.143%204.595c.114.043.19.152.19.274v2.122A20.956%2020.956%200%200%200%2012%206.648c-1.951.344-3.794.943-5.333%201.677V6.203c0-.122.076-.231.19-.274a14.648%2014.648%200%200%201%205.038-.933c1.926-.024%203.725.37%205.248.933zM12%208s3.752.625%206.411%202.482c.145.101.18.299.084.448-1.104%201.74-1.97%203.922-2.596%205.838%201.252-1.28%202.24-2.085%204.1-2.101.9%200%201.598.202%202.185.516C20.42%2020.618%2015.503%2022.72%2012%2022.667c-4.337.02-8.32-2.702-9.914-6.723.8-.709%201.74-1.277%203.247-1.277.92%200%201.626.212%202.22.537-.554-1.475-1.236-2.994-2.048-4.274a.33.33%200%200%201%20.084-.448C8.248%208.625%2012%208%2012%208zm0%201.333c-1.333%202%200%208%200%208s1.333-6%200-8z'%2F%3E%3C%2Fsvg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        </div>
+    </header>
+    <main class="roadmap">
+        <h1>Viaje a Capital Mooor 🛳️</h1>
+        <div class="section-container">
+            <h2>Materiales 📋</h2>
+            <form id="form">
+                <input type="text" id="itemInput" placeholder="Nuevo ítem..." required />
+                <button type="submit" class="itemInput-button">Agregar</button>
+            </form>
+            <ul id="itemList"></ul>
+        </div>
+        <div class="separate"></div>
+        <div class="section-container">
+            <h2>Pasajes de ida 🎟️</h2>
+            <h3 class="qr-title">QR Marti 💅🏽</h3>
+            <img src="https://lh3.googleusercontent.com/fife/ALs6j_EtW67lmUik1NAlFraLhgjikY5vhz9Ybe3F8Wwdsynf_Z9NJFebmJtYN5L-OIPvJTCF-VK48r0Fj5kSU9QzJBMQKWjPlkmwyBQHsIaMI-496FkRfrYNeFjajz9uGSC-4_HdJClDy_g-kepZhYK6u-LGgZ1QKEKhUSy2UZBXi3OaJGtOtQw5oOmbxJ9MMRDpfg9CvuW7WsvQWGsL2S-bsbry7GkIYOwMyeA3PHvGACkdzJDFIaPRz6FW9g9dkuY_FNtOcTqzm4kDdM_cHaz3KJnoF1lrmm6CbcMGf9J2KI5iRhv4wf900AEPMZ3LqymB7_hBkZTntjA4CLAjbPaouN29OzPVSx0imgfv239Fyo0AsSZGM7W1bPcngIud9OjsS8tnw0HNidXJ7DLZrQzbVbu33S7bzgDPGV4RWTNHFLilb54dsTOvQEqcbfue17YRiF1_xf639gl5OlHySCAgsu2bBZKMDxeqjpKZ-BcmaKOE5yGCqjWsMaPdUibbY3BlK7oXJIo2LOkx6RRdIo5W-bAmgfcQTrfhixgKUaqRh2O6m5QEWv9IFgrkicI18Mjo3jD9i285K0yWBOoH_YVa7sT2mwJAY1a33LkVLhj12aJGMnPCpEnsy2_KVYVqwTYzX9aF-YEVLzg7h_f76RoTmS7QGOTiTkR5H11I6K-Iem50tSHoAT7YZjNz86emxXTPZOTWyea14Vj2ZIFc6CN82WcO_G0teRogD2_Tg-W4LL_9q8rZi3zrWY52TiTdf4lY3JjUqwRaSKAus6f4biJmcVjsriM0asVbpD5YWqpgftjj2o-mW8G2c3DVRd56JskcygGzLyXA-oToHGn3gPs6HNgM8MDu-8xAmBR9D4aT0Wgg027OgAvDgI45qgQhsU8JJKX7-WsJwN0p_hEtIrUpmMbFakIMO65c6oaLjmLrns6b7xZWJNQCqzpleCl_bciuUlx3nUPtktCWwyy5BnNRmjePt7oxBgcBNkvGNAmayeMKikGFszBKcV5cjwDtBQqQqdJ4HuJ9eCC3lI7clGj692_ijJ2Tyzt3cPwid32nK3Njll4mvK-e2ilzzMlpVebeQLm34IZnBJ1YEbzgxQDMX-WidDPN8DMr-S_z1qzgcnqXfx1sqb2a_7qWOWpnitE__oAMHU__y44tlxsGQSi8Tw1UvNzzHwt5vURzoq6VNQDVwEcnP3uTFJV_mtI7jCIZ5F9F6DN1UaCIhGEfmEjBU5pQwWgtc_lL9Gulc-SEQNEhJZ4BoRaSqlV-owToXjcV3LjKtvfzls7TzV4Jy98cKIIGHPWsJAeu8GHmYKOy2g5oNvlcMo3mnHd2mNGdWfywpm4EST01CgU2icJwbODTJunFVFo3PmiZy9AMohL0YETeQhLsqJa0_7xQ4HIE0ZIzMFJ5IvaaCy-ErJR4EmQ2_7Yma_gk2Pas56tCGrw0tw9lx5KRaCjGL3LpFWLz1B3FcvgiE12AEkpQ2_dEWoYX9DWPV46g43taD8Go4BdCmnotqGGSfCISXW3TzckokUV4c5UyOgvZqVBiQ3Py_6cyku_V4DnsqEnL0RCzWGOTOTyDHMYrMR-qfIyVPqQRyK0SmehCD7vFOzwbKa5glA=w1016-h616?auditContext=prefetch" class="qr-img" alt="QR Marti">
+            <div class="sub-separate"></div>
+            <h3 class="qr-title">QR Jessi 🔪</h3>
+            <img src="https://lh3.googleusercontent.com/fife/ALs6j_EA37g07_cwTer0EgCF6Cnvt8mj51nFzBqqvG93NkuJAv-jR1lFLBVmrQE-WjmeR-9zRJsZAIosG3J-m7HD0WoaWiFGV57uyHTXdukCktW4GJgw_wWpoeruo-lYtkyeFWP0K5C6C6Nu2UmlYlvgbaOdW4LF0EXW4qkPrZ_1ZUXwZpMLavnlTC2PjfKUO_vzAODNfsyCmixSV5_RfUZfKnuyd0gRHVSF85fs3YF7GEXGsRljr7n1laRck6fnJZZOvYZclybYD13pzrTs9YpvVLd5geg9WiUL6RwPEWIVbsNppnpDtcikSIYYfqd1-Luw9hPmWWz6iampDsbKYDtkMGShzcX2iVSOe2yEb9yCfmWyjEyaki2gy1LvyPqX3G-5GgPf4litDXrrbZplOgy2dXB_Erd7EsKzv0xqMMTqjR89NjZoJwBe_bZ7ymHvGLT4pyd7j28ucqQJO4UumkioHA8u92CFTPFwonSzbDNtiuCx-8wqYYw5pTBx6CEJFENT7NlOgLTOv6wm1K6_fPmUDYPjcf49R-4PRz1iDXEc1yOvAHsyT6JZChu1mOuvOILafPyYqAdSFUECLR6xHSkGi5rHlzg3U4NHvcC52g18b1e9CdfIrcFVeU_uN5ez5kzn08h8XyWKAGa4QbZocFrcUKqo6Vb3W0R2I-0LwdsZO-2bvzEV4qAs_Z6O_tTr4nZWR6DQ88wQJ8yIknm-5KnNt2ZjfZ7DXJYAfjjwEApG_ZpS1eiEyfMPLUoMUf1yDJE7PVql2r1NGft0Sf8ASfkO0bHYNbrAu_YpsoICH3MdnIbqPl0Xglk10Vl1T3m9rd6UKeHpSy99XjUUgvGgkknBZyW6o4xZuMY_gFxNMsXobHB8oXum5XnMcKQvNEXlP2pJ7R1TIpLfN1cjq63b42c-i7dmGCw_iJz9HTN1FZZQfaOQsiVd6dEOnRdUvqUYxQdMofXWiGmyLwMuric7hnvnlBp12aTidD21q4GLu3Na9VlXeANNXDyICmJ-ziWsN3wGbxfdAuLhybwCLSpimbjRxKnMZT7n47amOBIGaCDoeTG5dIchZWfrJzRx0Iag8uwE2QPP3lg_q3uk8LxIVlSoO3615G-7b1IQXxz-SmULYIzOVVc9qsXSFrPX1vS3Xdf7p6hwe7lxmMc-gj-1fEDYG_1kMIw6Q6FrIZo9CzKNZMl4voNQMU9mH5HOLLWjH8I-4FUP1n-owJ2jIQSLYzaq-PUBHQoqSvqX1VlEAy7tDNRl1f0JZjqylcOIHlm1WUQwmR2XRt1uvlJAvOAB3mrm98ObLObdICHuwqa3Qbz5B1oOvSgukh4r9ITVz29XEWQQXv_YZSzW7NAtVLhLcgqqoXPHBLZC5xdYOJg5b8AIB2sb8Mf2qWz05DEY0pwfIEbRgTOjM7OMftqj_JgQrH1uaB0Qlay-f2F5NL3nGTY1JasmsDsISeaaN9zt3zjoayeM5dLaxaFFCOfLRQU_sUc_AtG4MJBBKCUfYM8Ya7-cFdg6o96VMefEchRA32pRCXnhhvBU751KefvwQ8Ewnkrb98lLB5Eldr-BhNPSzcANPboBIW3QMA_QTDybzPhi4mCdEC7yGpiaO3zdEyTGnA=w498-h604?auditContext=prefetch" class="qr-img" alt="QR Jessi">
+            <div class="sub-separate"></div>
+            <h3 class="qr-title">QR Pablo 🌚</h3>
+            <img src="https://lh3.googleusercontent.com/fife/ALs6j_GAgAIwlujl2cDO6CLRpB-IJyQO1re1zeU8LIPRcu4CKZSFODmrTqicOlQr18WlfdJDOQmQBvmeBpuxTpmUxDEDIWDpZOeM5ME_U1IZl4hfP_6tJpzHxCWSIa_CaJxR5kAmqCxM71P4KxytOh1lui-04W8axQMUtE9xmBG-GY9MN6KCRX_p1ZmuOI6AgtdCzc3RyKRSbhIdqPPlPoFIEFiMu0mT7Hi6G3YO4wAyVzFMyZ4nkquZ_tSkhqRpOOvxCtKHdMaz2nGdviZRUosmPdixBZOE5rdP0ZzVSIVnM-0ofuSaz0Nodey7Fw8W74cfAl7CP_7kbNE7qQ21Utz_8A5Qb7l4TIKt9zwifWpABW1oRk0pZTagzAb6a7sMEyFuVz8BeLrDHW6BW832gGDPMZ_JanSJhPXEuFj8qK5AqHX2H4MokLhzX_i685BYZ5NqML2dta6dC1mMtTMtpdJDoXkd3lq_6Tdap7T3Wt9_hiqEuPaHjjSP-WgENl54hdLqqCQsbO0L1XEG-QGCwxoBn5yR94RDgR1PUCN1wfjQGrFaMUoQr_TeTr0IPWE0_XogDMG7Q04hjTdzn1vBgNXhqWbX7VFdbAHPKi3OoN7TOrWXCGgFlkAfLagQdFNTNITjEwNeIl_FG0E8TGGIJ3QvVNpxAsSzt9lmywPWz4s41I4oaR5YtKrFjD--lTDdP3TekMKEraTFpolpNnyFxAcpkcKyFqopKAts1mtQBz1Kke4roM75FAQyiOK_tILhex-AdXOntM6yW0WkRDuHG73OuScQw8bglDb2bbM9grSJPq8oa9F6xmLxo62OwhL9kcixBnC7kNbqZZE1D91CASxQcnCsL8do0TxPY1uggEyptGaq8qMawO7olrLLGOIdO1_0GjgLr1hI3J-NDBKZhsoFhYX1H7GYYuJJmnrhdJaxT3TUX4H32VfOdchR_WxNpboUH1kx3JVyHFreCxf0RzECezVNDhRa5ru7fG4shsVb7iKgiMxougtyONuDhAl01eyVGVjC81UplEbenpPwlJsmLCO7Exi8HlEM3zX_P2QcNM_WEUSaprZWN-yguYbnl_jqmabqnjL1dExL9yOMrt00taynNSOxaJDmKM1LEe-PEmF-sP4cN0nMdf7gU7jaLg_9N0HM4rdx-PWvYmisy915mw8FOuaC02cFboYpOwVxWuUG7FxTm3xa3xUuJnixrpzaZwjxf6abxYoOXKrELWAMvJqRZN1ekopp9Yplt3BEyO0BGmW2WF4RVc0CC5prRG8qBnW-miQpNUZXWgavpMQwHzEhnPXDs2_9rWuwYvQn0sf21hwczRLSqUMEAcnTVRQZ2kDWD6Mb-40AYww0c8uZ5VabC3C66mdSoLBn4WXg1TDQdvHDRRMuMJuFXXUfX3xgqZnHwaKaJXAyQyD1xK-UETWuVxzPL0mJEPAKhSHRA4CJayy4ih4CoKYFe_YJIsIUN-89uPxSRxJYXI1rh_UM2ZBK59vqLXFE16SYV1UBVH9nOQbam-JqezPTYoOISfOSja3ZZn26OJO-IgNNCMcT5wMvShv1frbzL_rU959V0OzScJEHh0FlPervYeabp1ZytzPwsQkro7uC2vyW4A=w498-h604?auditContext=prefetch" class="qr-img" alt="QR Pablo">
+            <div class="button-link-container">
+                <a href="https://drive.//borrarEsto//google.com/file/d/16wkq4MgtrLzJQecpy7ye4qwPHV8QnI0N/view?usp=drive_link" target="_blank" class="button-link">📄</a>
+            </div>
+        </div>
+        <div class="separate"></div>
+        <div class="section-container">
+            <h2>Translado ida 🚂</h2>
+            <h3>Terminal MdP</h3>
+            <ul>
+                <li>Fecha y Hora de viaje: viernes 30/05/2025 | 01:22hs</li>
+                <li>Tiempo estimado de llegada: 07:01hs</li>
+                <li>Tren: 302</li>
+                <li>Coche: 501</li>
+                <li>Asientos: 62, 63, 64</li>
+                <li>Costó: $31.500</li>
+            </ul>
+            <div class="button-link-container">
+                <a href="https://maps.app.goo.gl/DyHeR732Jzg2rcKi9" target="_blank" class="button-link">🗺️</a>
+            </div>
+        </div>
+        <div class="separate"></div>
+        <div class="section-container">
+            <h2>Alojamiento 📍</h2>
+            <h3>Palermo Queens ⭐ Fantástico!</h3>
+            <ul>
+                <li>Check-in: 14:00 a 18:00hs</li>
+                <li>Check-out: 11:00hs</li>
+            </ul>
+            <div class="button-link-container">
+                <a href="https://www.booking.com/hotel/ar/palermo-crespo-julian-alvarez-y-lerma.es-ar.html?aid=2369661&label=msn-eTRytc5jFlHwe2JK6aWTzg-80539413995018%3Atikwd-80539589616805%3Aloc-8%3Aneo%3Amte%3Alp146381%3Adec%3Aqsbooking-Share-2bmuSVW%401744851886&sid=3e5735f3b680487d9dfabec019b98094&all_sr_blocks=1127821401_387357069_4_0_0&checkin=2025-07-18&checkout=2025-07-20&dest_id=-979186&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1127821401_387357069_4_0_0&hpos=1&matching_block_id=1127821401_387357069_4_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1127821401_387357069_4_0_0__12000&srepoch=1746228595&srpvid=bd40a53641bb0195&type=total&ucfs=1&" target="_blank" class="button-link">🔍</a>
+                <a href="https://maps.app.goo.gl/TsnHnLuRCnBqeo5o6" target="_blank" class="button-link">🗺️</a>
+            </div>
+        </div>
+        <div class="separate"></div>
+        <div class="section-container">
+            <h2>Actividades 🎯</h2>
+            <h3>Betular Pâtisserie</h3>
+            <ul>
+                <li>Dirección: Mercedes 3900</li>
+                <li>Horario: 09:00 - 20:00hs</li>
+            </ul>
+            <div class="button-link-container">
+                <a href="https://www.betular.com/" target="_blank" class="button-link">🥡</a>
+                <a href="https://maps.app.goo.gl/9yNYDGAtswSoDZPc7" target="_blank" class="button-link">🗺️</a>
+            </div>
+            <div class="sub-separate"></div>
+            <h3>Starbucks</h3>
+            <ul>
+                <li>Dirección: Godoy Cruz 2560</li>
+                <li>Horario: 10:00 - 22:00hs</li>
+            </ul>
+            <div class="button-link-container">
+                <a href="https://www.starbucks.com.ar/" target="_blank" class="button-link">🥡</a>
+                <a href="https://maps.app.goo.gl/gL7hoJDRYeooa8HQ6" target="_blank" class="button-link">🗺️</a>
+            </div>
+            <div class="sub-separate"></div>
+            <h3>Fabric Sushi</h3>
+            <ul>
+                <li>Dirección: Costa Rica 6000</li>
+                <li>Horario: 12:00 - 24:30hs</li>
+            </ul>
+            <div class="button-link-container">
+                <a href="https://www.fabricsushi.com.ar/" target="_blank" class="button-link">🥡</a>
+                <a href="https://maps.app.goo.gl/SeHnGTv5LSPKug4c9" target="_blank" class="button-link">🗺️</a>
+            </div>
+            <div class="sub-separate"></div>
+            <h3>Namida</h3>
+            <ul>
+                <li>Dirección: El Salvador 5783</li>
+                <li>Horario: 12:00 - 16:00hs | 20:00 - 24:00hs</li>
+            </ul>
+            <div class="button-link-container">
+                <a href="https://www.monline.com.ar/NamidaNikkei" target="_blank" class="button-link">🥡</a>
+                <a href="https://maps.app.goo.gl/Zq5xWbXw6mBDKjw1A" target="_blank" class="button-link">🗺️</a>
+            </div>
+            <div class="sub-separate"></div>
+            <h3>Palermo Soho</h3>
+            <ul>
+                <li>Bares | Boliches</li>
+                <li>Horario: 19:00 - 06:00hs</li>
+            </ul>
+            <div class="button-link-container">
+                <a href="https://maps.app.goo.gl/cf25h2i2Lrqcgdh28" target="_blank" class="button-link">🗺️</a>
+            </div>
+            <div class="sub-separate"></div>
+            <h3>Palermo Hollywood</h3>
+            <ul>
+                <li>Bares | Boliches</li>
+                <li>Horario: 19:00 - 06:00hs</li>
+            </ul>
+            <div class="button-link-container">
+                <a href="https://maps.app.goo.gl/xsiKCckCWw6jUi5b6" target="_blank" class="button-link">🗺️</a>
+            </div>
+            <div class="sub-separate"></div>
+            <h3>San Telmo</h3>
+            <ul>
+                <li>Pasear</li>
+                <li>Horario: 10:00 - 17:00hs</li>
+            </ul>
+            <div class="button-link-container">
+                <a href="https://maps.app.goo.gl/V2uwYwngvbYP81Wv9" target="_blank" class="button-link">🗺️</a>
+            </div>
+            <div class="sub-separate"></div>
+            <h3>Puerto Madero</h3>
+            <ul>
+                <li>Pasear</li>
+                <li>Horario: 10:00 - 17:00hs</li>
+            </ul>
+            <div class="button-link-container">
+                <a href="https://maps.app.goo.gl/EMqntr6f1oAAzrjc6" target="_blank" class="button-link">🗺️</a>
+            </div>
+        </div>
+        <div class="separate"></div>
+        <div class="section-container">
+            <h2>Translado vuelta 🚌</h2>
+            <h3>Terminal Retiro</h3>
+            <ul>
+                <li>Fecha y Hora de viaje: domingo 01/06/2025 | 05:09hs</li>
+                <li>Tiempo estimado de llegada: -</li>
+                <li>Asientos: -</li>
+                <li>Costo: $22.185 - $71.400</li>
+            </ul>
+            <div class="button-link-container">
+                <a href="https://maps.app.goo.gl/CZZRY6ZrmkaPUKBj8" target="_blank" class="button-link">🗺️</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script type="./script.js" defer></script>
+</body>
+</html>

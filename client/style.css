@@ -1,0 +1,210 @@
+:root   {
+    --letter-color: #07090F;
+    --bgBlack-color: #121212CC;
+    --bgWhite-color: #EAEAEA;
+    --mistyRose-color: #FFE5EC;
+    --pink-color: #FFC2D1;
+    --bakerMillerPink: #FF8FAB;
+    --rosePompadour-color: #FB6F92;
+}
+
+*   {
+    color: var(--letter-color);
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 12px;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+body {
+    align-items: center;
+    background-color: var(--bgBlack-color);
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+}
+
+h1  {
+    font-size: 3.3rem;
+    font-weight: 700;
+    margin: 2rem 0 0.7rem 0;
+    text-align: center;
+}
+
+h2  {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+h3  {
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0.5rem 0 0.5rem 0;
+    text-align: center;
+}
+
+ul  {
+    list-style-type: none;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+}
+
+ul li  {
+    align-items: start;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: start;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+ul li::before {
+    content: "- ";
+}
+
+table thead   {
+    background-color: var(--pink-color);
+}
+
+table thead tr th   {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 80%;
+}
+
+button {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+
+/* Components */
+#form   {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#itemInput  {
+    background-color: white;
+    color: var(--letter-color);
+    border: 1px solid var(--bgBlack-color);
+    border-radius: 10px;
+}
+
+.itemInput-button   {
+    background-color: var(--mistyRose-color);
+    border: 0px solid;
+    border-radius: 10px;
+    border-bottom: 3px solid var(--pink-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: var(--letter-color);
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    width: 100px;
+}
+
+.roadmap {
+    align-items: center;
+    background-color: var(--bgWhite-color);
+    border: none solid transparent;
+    border-top: 15px solid var(--rosePompadour-color);
+    border-radius: 15px;
+    box-shadow: 0px 10px 16px 7px #12121255;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.7rem 0 0 0;
+    max-width: 768px;
+    padding: 0% 2% 2% 2%;
+}
+
+.section-container  {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.qr-title    {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: auto;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.qr-img  {
+    border-radius: 10px;
+    min-width: 275px;
+}
+
+.separate {
+    border-bottom: 3px solid var(--letter-color);
+    margin: 0 0 2rem 0;
+    padding: 0 0 2rem 0;
+    width: 200px;
+}
+
+.sub-separate {
+    border-bottom: 1px solid var(--letter-color);
+    margin: 0 0 1rem 0;
+    padding: 0 0 1rem 0;
+    width: 150px;
+}
+
+.button-link-container  {
+    align-items: center;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    width: 150px;
+}
+
+.button-link    {
+    align-items: center;
+    background-color: var(--mistyRose-color);
+    border: 0px solid;
+    border-bottom: 3px solid var(--pink-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: var(--letter-color);
+    cursor: pointer;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Media Queries */
+@media (max-width: 440px), (max-width: 360px) {
+    .roadmap  {
+        width: 90%;
+    }
+}
