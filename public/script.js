@@ -37,7 +37,8 @@ function renderItems(items) {
         list.appendChild(li);
     });
 
-    localStorage.setItem('materiales', JSON.stringify(items));
+    const STORAGE_KEY = 'mooor_materiales';
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
 }
 
 form.addEventListener('submit', e => {
