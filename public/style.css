@@ -151,6 +151,9 @@ button {
 }
 
 .custom-list    {
+    align-items: start;
+    display: flex;
+    justify-content: space-between;
     max-width: 350px;
 }
 
@@ -160,7 +163,8 @@ button {
 
 .item-text  {
     font-size: 1.3rem;
-    padding: 1.2rem 0.5rem 0 0.5rem;
+    max-width: 260px;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
 }
 
 .qr-title    {
