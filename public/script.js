@@ -21,8 +21,10 @@ function renderItems(items) {
     list.innerHTML = '';
     items.forEach((item, index) => {
         const li = document.createElement('li');
+        li.classList.add('custom-list');
         const span = document.createElement('span');
         span.textContent = item.text;
+        span.classList.add('item-text');
         if (item.done) span.classList.add('done');
         span.addEventListener('click', () => {
             socket.emit('toggleItem', index);
