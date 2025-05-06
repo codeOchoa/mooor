@@ -11,7 +11,7 @@ checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', checkAllSelected);
 });
 
-const socket = io('https://mooor.vercel.app/');
+const socket = io('https://mooor-server.onrender.com/');
 
 const form = document.getElementById('form');
 const input = document.getElementById('itemInput');
