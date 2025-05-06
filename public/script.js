@@ -17,8 +17,6 @@ const form = document.getElementById('form');
 const input = document.getElementById('itemInput');
 const list = document.getElementById('itemList');
 
-let localBackup = JSON.parse(localStorage.getItem('materiales')) || [];
-
 function renderItems(items) {
     list.innerHTML = '';
     items.forEach((item, index) => {
@@ -53,10 +51,6 @@ form.addEventListener('submit', e => {
 
 socket.on('updateList', items => {
     renderItems(items);
-});
-
-socket.on('connect_error', () => {
-    renderItems(localBackup);
 });
 
 console.log('Tremendo viaje esquizo')

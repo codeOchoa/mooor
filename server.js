@@ -1,8 +1,7 @@
-import { io } from 'socket.io-client';
-
 const express = require('express');
 const http = require('http');
 const cors = require('cors');
+const path = require('path');
 const { Server } = require('socket.io');
 
 const app = express();
@@ -16,10 +15,7 @@ const io = new Server(server, {
     }
 });
 
-let materials = [
-    { text: 'Johnnie Walker Red Label 750ml', done: false },
-    { text: 'Cepillo de dientes + Pasta Dental', done: false }
-];
+app.use(express.static(path.join(__dirname, 'public')));
 
 io.on('connection', socket => {
     console.log('🟢 Cliente conectado');
