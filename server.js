@@ -1,19 +1,11 @@
 const express = require('express');
 const http = require('http');
-const cors = require('cors');
 const path = require('path');
 const { Server } = require('socket.io');
 
 const app = express();
-app.use(cors());
-
 const server = http.createServer(app);
-const io = new Server(server, {
-    cors: {
-        origin: '*',
-        methods: ['GET', 'POST']
-    }
-});
+const io = new Server(server);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -46,5 +38,5 @@ io.on('connection', socket => {
 
 const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
-    console.log(`🚀 Servidor Socket.io escuchando en el puerto ${PORT}`);
+    console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
 });
