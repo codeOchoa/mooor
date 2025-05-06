@@ -1,6 +1,6 @@
 {
   "name": "mooor",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "WebSocket",
   "keywords": [
     "travel",
@@ -19,7 +19,7 @@
   "license": "ISC",
   "author": "codeOchoa",
   "type": "module",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"

@@ -30,6 +30,7 @@ function renderItems(items) {
 
         const removeBtn = document.createElement('button');
         removeBtn.textContent = '❌';
+        removeBtn.classList.add('button-link');
         removeBtn.onclick = () => socket.emit('removeItem', index);
 
         li.appendChild(span);
