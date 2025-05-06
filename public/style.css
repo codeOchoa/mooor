@@ -99,6 +99,7 @@ button {
     align-items: center;
     display: flex;
     justify-content: center;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 #itemInput  {
