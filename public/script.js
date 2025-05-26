@@ -55,8 +55,8 @@ const reels = [
 
 function openRandomReel() {
     const random = reels[Math.floor(Math.random() * reels.length)];
-    const appUrl = `instagram://vivamosba/reel/${random}`;
-    const webUrl = `https://www.instagram.com/vivamosba/reel/${random}`;
+    const appUrl = `instagram://reel/${random}`;
+    const webUrl = `https://www.instagram.com/reel/${random}`;
 
     window.location.href = appUrl;
 
