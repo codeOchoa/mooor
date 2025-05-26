@@ -1,3 +1,63 @@
+const reels = [
+    'https://www.instagram.com/vivamosba/reel/DJFjImbOmnM/',
+    'https://www.instagram.com/vivamosba/reel/DIkKFZTuDq9/',
+    'https://www.instagram.com/vivamosba/reel/DIe4W0pu427/',
+    'https://www.instagram.com/vivamosba/reel/DH9nnVFuQOq/',
+    'https://www.instagram.com/vivamosba/reel/DIPiEbKOg_V/',
+    'https://www.instagram.com/vivamosba/reel/DHJ8B3WuKm6/',
+    'https://www.instagram.com/vivamosba/reel/DG39ftMOm4y/',
+    'https://www.instagram.com/vivamosba/reel/DHE5NcSuPAs/',
+    'https://www.instagram.com/vivamosba/reel/DGobQw1uISc/',
+    'https://www.instagram.com/vivamosba/reel/DGT32QIuPGr/',
+    'https://www.instagram.com/vivamosba/reel/DF_RL5bSFKR/',
+    'https://www.instagram.com/vivamosba/reel/DFtNOJ4SdKg/',
+    'https://www.instagram.com/vivamosba/reel/DEqcEutSpzQ/',
+    'https://www.instagram.com/vivamosba/reel/DFBYe9qS9NB/',
+    'https://www.instagram.com/vivamosba/reel/DEipGOXyAi9/',
+    'https://www.instagram.com/vivamosba/reel/DEVr7afShdX/',
+    'https://www.instagram.com/vivamosba/reel/DEIy64Cy1mI/',
+    'https://www.instagram.com/vivamosba/reel/DDiLO0oSCqw/',
+    'https://www.instagram.com/vivamosba/reel/DCpmOxySvpB/',
+    'https://www.instagram.com/vivamosba/reel/DCxcnHLsg_q/',
+    'https://www.instagram.com/vivamosba/reel/DDDdyITuzZl/',
+    'https://www.instagram.com/vivamosba/reel/DCh_xH6sotx/',
+    'https://www.instagram.com/vivamosba/reel/DCXrhcYv2T-/',
+    'https://www.instagram.com/vivamosba/reel/DCIJfk9Sehd/',
+    'https://www.instagram.com/vivamosba/reel/DB7U7IBP3__/',
+    'https://www.instagram.com/vivamosba/reel/DBzby1_ya7G/',
+    'https://www.instagram.com/vivamosba/reel/DBpUBE1sCVF/',
+    'https://www.instagram.com/vivamosba/reel/DBZ5F16tdus/',
+    'https://www.instagram.com/vivamosba/reel/DBPiixAMgMC/',
+    'https://www.instagram.com/vivamosba/reel/DBFRtq_MWWl/',
+    'https://www.instagram.com/vivamosba/reel/DA9cvfBSa4T/',
+    'https://www.instagram.com/vivamosba/reel/DAzMkv6vFm-/',
+    'https://www.instagram.com/vivamosba/reel/DARxM7GMsoX/',
+    'https://www.instagram.com/vivamosba/reel/C_wRdqEM9Vs/',
+    'https://www.instagram.com/vivamosba/reel/C_eQyLgMjs3/',
+    'https://www.instagram.com/vivamosba/reel/C_Os5kev4Nt/',
+    'https://www.instagram.com/vivamosba/reel/C_B0GwrSU7P/',
+    'https://www.instagram.com/vivamosba/reel/C-0_mldP3fe/',
+    'https://www.instagram.com/vivamosba/reel/C-oMZtIPv6O/',
+    'https://www.instagram.com/vivamosba/reel/C-d1PwAPrsN/',
+    'https://www.instagram.com/vivamosba/reel/C9yG69XvNGt/',
+    'https://www.instagram.com/vivamosba/reel/C-LylpOvC9t/',
+    'https://www.instagram.com/vivamosba/reel/C9s3dmQPIW6/',
+    'https://www.instagram.com/vivamosba/reel/C9VpY3ivcSK/',
+    'https://www.instagram.com/vivamosba/reel/C9lPCSXvyEk/',
+    'https://www.instagram.com/vivamosba/reel/C9QnDzFPlF5/',
+    'https://www.instagram.com/vivamosba/reel/C825wCBss8f/',
+    'https://www.instagram.com/vivamosba/reel/C8kzo0zvwZW/',
+    'https://www.instagram.com/vivamosba/reel/C8VfE45scCX/',
+    'https://www.instagram.com/vivamosba/reel/C8NqgQOP46E/',
+    'https://www.instagram.com/vivamosba/reel/C8BEFZEtc9c/',
+    'https://www.instagram.com/vivamosba/reel/C8IZpzfvSEq/'
+];
+
+function openRandomReel() {
+    const randomIndex = Math.floor(Math.random() * reels.length);
+    window.open(reels[randomIndex], '_blank');
+}
+
 const checkboxes = document.querySelectorAll('.checkbox');
 
 function checkAllSelected() {
