@@ -4,6 +4,7 @@ import { getDatabase } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-
 const firebaseConfig = {
     apiKey: "AIzaSyB6zxXJIIc3w-tLK8VjKyeDoG1g7wjKDyU",
     authDomain: "mooor-f5d7e.firebaseapp.com",
+    databaseURL: "https://mooor-f5d7e-default-rtdb.firebaseio.com/",
     projectId: "mooor-f5d7e",
     storageBucket: "mooor-f5d7e.firebasestorage.app",
     messagingSenderId: "201169950221",
