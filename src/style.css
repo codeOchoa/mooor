@@ -28,6 +28,12 @@ body {
     padding: auto;
 }
 
+iframe  {
+    border-radius: 12px;
+    height: 152;
+    width: 100%;
+}
+
 h1  {
     font-size: 3.3rem;
     font-weight: 700;
