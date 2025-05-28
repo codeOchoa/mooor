@@ -30,7 +30,7 @@ body {
 
 iframe  {
     border-radius: 12px;
-    height: 152;
+    height: auto;
     width: 100%;
 }
 
