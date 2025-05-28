@@ -1,4 +1,18 @@
-import { db } from "./config.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+import { getDatabase, ref, onValue, push, remove, update } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-database.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyB6zxXJIIc3w-tLK8VjKyeDoG1g7wjKDyU",
+    authDomain: "mooor-f5d7e.firebaseapp.com",
+    databaseURL: "https://mooor-f5d7e-default-rtdb.firebaseio.com/",
+    projectId: "mooor-f5d7e",
+    storageBucket: "mooor-f5d7e.firebasestorage.app",
+    messagingSenderId: "201169950221",
+    appId: "1:201169950221:web:80a3269232402d765b6744"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
 
 const reels = [
     'DJFjImbOmnM',
@@ -115,5 +129,8 @@ function openRandomReel() {
         window.location.href = webUrl;
     }, 1500);
 }
+
+window.db = db;
+window.firebaseRefs = { ref, onValue, push, remove, update };
 
 console.log('Tremendo viaje MOOOR')
