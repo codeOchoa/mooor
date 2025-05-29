@@ -105,7 +105,7 @@ onValue(itemsRef, (snapshot) => {
     clearTimeout(updateTimeout);
     updateTimeout = setTimeout(() => {
         renderItems(snapshot.val());
-    }, 5000);
+    }, 2000);
 });
 
 form.addEventListener("submit", (e) => {
