@@ -117,7 +117,7 @@ form.addEventListener("submit", (e) => {
     }
 });
 
-function openRandomReel() {
+window.openRandomReel = function() {
     console.log("Random Reel Opened!");
     const random = reels[Math.floor(Math.random() * reels.length)];
     const appUrl = `instagram://reel/${random}`;

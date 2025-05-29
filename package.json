@@ -1,7 +1,7 @@
 {
   "name": "mooor",
-  "version": "1.0.5",
-  "description": "WebSocket",
+  "version": "0.8.9",
+  "description": "A travel guide for friends",
   "keywords": [
     "travel",
     "guide",
@@ -19,12 +19,7 @@
   "license": "ISC",
   "author": "codeOchoa",
   "type": "commonjs",
-  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "firebase": "^11.8.1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
